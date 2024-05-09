@@ -11,7 +11,7 @@ import { ScrollService } from './scroll-service';
 export class NavHeaderComponent {
 
   logoSrc: string =
-    '/assets/logo2.png'
+    'assets/logo2.png'
   @Input()
   action2: string = '/about'
   @Input()
@@ -25,7 +25,7 @@ export class NavHeaderComponent {
   }
 
   ngOnInit(): void {
-    this.http.get<any[]>('/assets/json/menulist.json').subscribe(data => {
+    this.http.get<any[]>('assets/json/menulist.json').subscribe(data => {
       this.menuItems = data;
       console.log(this.menuItems);
     });
