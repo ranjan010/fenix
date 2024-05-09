@@ -21,7 +21,7 @@ const routes = [
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes,{useHash:true}),
     ComponentsModule,
     HttpClientModule
   ],
