@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component'
 import { FooterComponent } from './footer/footer.component'
 import { GalleryComponent } from './gallery/gallery.component'
 import { SliderComponent } from './slider/slider.component'
+import { CarouselSliderComponent } from './carousel-slider/carousel-slider.component'
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SliderComponent } from './slider/slider.component'
         ContactComponent,
         FooterComponent,
         GalleryComponent,
-        SliderComponent
+        SliderComponent,
+        CarouselSliderComponent
     ],
     imports: [CommonModule, RouterModule],
     exports: [
@@ -22,7 +24,8 @@ import { SliderComponent } from './slider/slider.component'
         ContactComponent,
         FooterComponent,
         GalleryComponent,
-        SliderComponent
+        SliderComponent,
+        CarouselSliderComponent
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

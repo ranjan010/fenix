@@ -27,7 +27,7 @@ export const FooterConstants = {
   copyrightText: `© ${new Date().getFullYear()} Fenix Kitchen Cabinet. All rights reserved.`,
   privacyLink: 'Privacy Policy',
   termsLink: 'Terms of Service',
-  logoSrc: '/assets/logo.png',
+  logoSrc: 'assets/logo.png',
   contentText: 'Follow us on social media for more updates and inspiration',
   logoAlt: 'Fenix Kitchen Cabinet',
   sloganText: 'Transforming kitchens with quality cabinets'
