@@ -4,14 +4,6 @@
     "segment": "slider"
   },
   {
-    "label": "About Us",
-    "segment": "contact"
-  },
-  {
-    "label": "Services",
-    "segment": "services"
-  },
-  {
     "label": "Gallery",
     "segment": "gallery"
   },
