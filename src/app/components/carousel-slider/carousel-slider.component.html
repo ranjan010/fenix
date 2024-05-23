@@ -1,7 +1,0 @@
-<div class="slider">
-    <div class="slide" *ngFor="let image of images; let i = index" [class.active]="currentIndex === i">
-        <img [src]="image" alt="Slide {{ i + 1 }}" class="thq-img-ratio-16-9">
-    </div>
-    <button (click)="prevSlide()" class="prev" [class.disabled]="currentIndex === 0">&laquo;</button>
-    <button (click)="nextSlide()" class="next" [class.disabled]="currentIndex === images.length - 1">&raquo;</button>
-</div>

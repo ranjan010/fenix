@@ -6,6 +6,40 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent {
+  images: string[] = [
+    'assets/gallery/Gallery1.jpg',
+    'assets/gallery/Gallery 2.JPEG',
+    'assets/gallery/Gallery 3.JPG',
+    'assets/gallery/Gallery 4.JPEG'
+  ];
+
+  currentIndex: number = 0;
+  selectedImage: string | null = null;
+
+  constructor() { }
+
+  showImage(image: string) {
+    this.selectedImage = image;
+    this.currentIndex = this.images.indexOf(image);
+  }
+
+  hideImage() {
+    this.selectedImage = null;
+  }
+
+  nextImage() {
+    if (this.currentIndex < this.images.length - 1) {
+      this.currentIndex++;
+      this.selectedImage = this.images[this.currentIndex];
+    }
+  }
+
+  prevImage() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.selectedImage = this.images[this.currentIndex];
+    }
+  }
 
   @Input()
   image3Src: string =
@@ -27,5 +61,4 @@ export class GalleryComponent {
   heading1: string = 'Our Kitchen Cabinet Gallery'
   @Input()
   image1Alt: string = 'Modern White Kitchen Cabinets'
-  constructor() { }
 }

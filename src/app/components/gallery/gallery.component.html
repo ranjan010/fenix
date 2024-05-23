@@ -5,12 +5,21 @@
                 content1 }}</span>
         </div>
         <div class="gallery1-content">
-            <div class="gallery1-container"><img [attr.alt]="image1Alt" [attr.src]="image1Src"
-                    class="thq-img-ratio-4-3" /></div>
-            <div class="gallery1-container1"><img [attr.alt]="image2Alt" [attr.src]="image2Src"
-                    class="thq-img-ratio-4-3" /></div>
-            <div class="gallery1-container2"><img [attr.alt]="image3Alt" [attr.src]="image3Src"
-                    class="thq-img-ratio-4-3" /></div>
+            <ng-container *ngFor="let image of images">
+                <div class="gallery1-container2 pointer"><img [attr.alt]="image3Alt" [attr.src]="image" (click)="showImage(image)"
+                        class="thq-img-ratio-4-3" /></div>
+            </ng-container>
         </div>
     </div>
 </div>
+
+<div *ngIf="selectedImage" class="image-modal">
+    <div class="modal-content">
+      <span class="close" (click)="hideImage()">&times;</span>
+      <img [src]="selectedImage" alt="Selected Image">
+      <div class="navigation">
+        <button (click)="prevImage()" [disabled]="currentIndex === 0">Previous</button>
+        <button (click)="nextImage()" [disabled]="currentIndex === images.length - 1">Next</button>
+      </div>
+    </div>
+  </div>

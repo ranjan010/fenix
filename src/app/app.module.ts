@@ -4,8 +4,6 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { ComponentsModule } from './components/components-module';
 import { HttpClientModule } from '@angular/common/http';
-import { SliderComponent } from './components/slider/slider.component';
-import { CarouselSliderComponent } from './components/carousel-slider/carousel-slider.component';
 
 const routes = [
 	{
