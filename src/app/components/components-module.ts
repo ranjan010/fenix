@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component'
 import { GalleryComponent } from './gallery/gallery.component'
 import { SliderComponent } from './slider/slider.component'
 import { ReviewComponent } from './review/review.component'
+import { AboutusComponent } from './aboutus/aboutus.component'
+
+
 
 
 
@@ -18,6 +21,7 @@ import { ReviewComponent } from './review/review.component'
         GalleryComponent,
         SliderComponent,
         ReviewComponent,
+        AboutusComponent
     ],
     imports: [CommonModule, RouterModule],
     exports: [
@@ -27,6 +31,7 @@ import { ReviewComponent } from './review/review.component'
         GalleryComponent,
         SliderComponent,
         ReviewComponent,
+        AboutusComponent
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

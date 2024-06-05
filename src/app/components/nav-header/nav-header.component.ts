@@ -27,7 +27,6 @@ export class NavHeaderComponent {
   ngOnInit(): void {
     this.http.get<any[]>('assets/json/menulist.json').subscribe(data => {
       this.menuItems = data;
-      console.log(this.menuItems);
     });
   }
 

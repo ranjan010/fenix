@@ -8,6 +8,10 @@
     "segment": "gallery"
   },
   {
+    "label": "Services",
+    "segment": "aboutus"
+  },
+  {
     "label": "Contact Us",
     "segment": "contact"
   }

@@ -1,0 +1,31 @@
+.services-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%; 
+    gap: 15px;
+  }
+  
+  .services-header-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .service-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .service-card h2 {
+    margin-top: 1rem;
+  }
+  
+  .service-card p {
+    text-align: left;
+  }

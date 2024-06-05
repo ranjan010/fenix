@@ -39,10 +39,12 @@
     width: 100%;
     display: flex;
     align-self: stretch;
-    align-items: center;
+    align-items: flex-start; /* Align items to the start */
     flex-shrink: 0;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the start */
+    flex-wrap: wrap; /* Allow wrapping */
   }
+  
   .gallery1-container {
     width: 100%;
     display: flex;
@@ -56,15 +58,16 @@
     justify-content: center;
   }
   .gallery1-container2 {
-    width: 100%;
+    width: calc(20% - var(--dl-space-space-twounits)); /* 25% width for each image container minus the gap */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: var(--dl-space-space-twounits); /* Add gap between images */
+    margin-bottom: var(--dl-space-space-twounits); /* Add gap between rows */
   }
-  @media(max-width: 991px) {
-    .gallery1-content {
-      align-items: center;
-      flex-direction: column;
+  @media (max-width: 991px) {
+    .gallery1-container2 {
+      width: calc(50% - var(--dl-space-space-twounits)); /* For smaller screens, two images per row */
     }
   }
 

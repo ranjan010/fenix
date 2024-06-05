@@ -10,7 +10,11 @@ export class GalleryComponent {
     'assets/gallery/Gallery1.jpg',
     'assets/gallery/Gallery 2.JPEG',
     'assets/gallery/Gallery 3.JPG',
-    'assets/gallery/Gallery 4.JPEG'
+    'assets/gallery/gallery8.jpeg',
+    'assets/gallery/gallery15.jpeg',
+    'assets/gallery/Gallery%204.JPEG',
+    'assets/gallery/gallery9.JPG',
+    'assets/gallery/gallery11.jpeg',
   ];
 
   currentIndex: number = 0;
